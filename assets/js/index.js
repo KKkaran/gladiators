@@ -59,4 +59,3 @@ document.getElementById("skip").addEventListener("click",function(){
     skip = true;
     fight();
 })
-window.confirm("yougay?")
