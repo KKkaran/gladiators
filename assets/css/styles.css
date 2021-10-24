@@ -1,7 +1,31 @@
 body {
   background-color: black;
   color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
 }
-h1 {
+h1,
+h2 {
   text-align: center;
+}
+button {
+  background-color: blue;
+  padding: 40px;
+  border: none;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+}
+button:hover {
+  background-color: seagreen;
+  border-radius: 50px;
+}
+#skip {
+  background-color: pink;
+  color: black;
+}
+#skip:hover {
+  background-color: yellow;
 }
