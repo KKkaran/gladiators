@@ -1,18 +1,18 @@
-let playerHealth = 0;
+let playerHealth = 100;
 let playerAttack = 10;
 let playerName;
 let enemyHealth;
 let enemyAttack = 12;
 let playerMoney =0;
 
-let fight = function(enemyName,playerName) {
+let fight = function(enemyName, playerName) {
 
 
     // You can also log multiple values at once like this
     //console.log(playerName, playerAttack, playerHealth);
     // if player choses to fight, then fight
         // if player choses to fight, then fight
-        // if player choses to fight, then fight
+        // if player choses to fight, then fightssss
     //console.log("inside the fight funvtion")
     while(enemyHealth > 0 && playerHealth > 0){
         let promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
