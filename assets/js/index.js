@@ -5,7 +5,9 @@ let enemyHealth;
 let enemyAttack = 12;
 let playerMoney =0;
 
-let fight = function(enemyName, playerName) {
+console.log("this change was made in mac!!!");
+
+let fight = function(enemyName,playerName) {
 
 
     // You can also log multiple values at once like this
