@@ -5,7 +5,7 @@ let enemyHealth;
 let enemyAttack = 12;
 let playerMoney =0;
 
-console.log("this change was made in mac!!!")
+console.log("this change was made in mac!!!");
 
 let fight = function(enemyName,playerName) {
 
