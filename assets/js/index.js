@@ -66,11 +66,8 @@ let fight = function(enemyName,playerName) {
     console.log("\n");
 }
 ;
-
 let enemyNames = ["Roborto","Amy Android","Robo Trumble"]
-
 //playerName = window.prompt("What is your robot's name?");
-
 function startGame(){
     
     playerHealth = 100;
@@ -167,6 +164,7 @@ function shop(){
 }
 
 //startGame();//game starts as the browser loads!!!
-for(let i=0;i<20;i++){
-  console.log(Math.floor(Math.random()*5 +6));
+function randomNumber(){
+    var value = Math.floor(Math.random() * 21) + 40;
+    return value;
 }
