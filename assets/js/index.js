@@ -18,7 +18,7 @@ let fight = function(enemyName,playerName) {
         let promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
         if (promptFight === "fight" || promptFight === "FIGHT") {
             // remove enemy's health by subtracting the amount set in the playerAttack variable
-            enemyHealth = enemyHealth - playerAttack;
+            enemyHealth = Math.max(0,(enemyHealth - playerAttack));
             console.log(
             playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
             );
@@ -33,7 +33,7 @@ let fight = function(enemyName,playerName) {
             }
         
             // remove player's health by subtracting the amount set in the enemyAttack variable
-            playerHealth = playerHealth - enemyAttack;
+            playerHealth = Math.max(0,(playerHealth - enemyAttack));
             console.log(
             enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
             );
@@ -54,7 +54,7 @@ let fight = function(enemyName,playerName) {
             if (confirmSkip) {
                 window.alert(playerName + " has decided to skip this fight. Goodbye!");
                 // subtract money from playerMoney for skipping
-                playerMoney = playerMoney - 10;
+                playerMoney = Math.max(0,(playerMoney - 10));
                 console.log("playerMoney", playerMoney)
 
                 break;
@@ -69,7 +69,7 @@ let fight = function(enemyName,playerName) {
 
 let enemyNames = ["Roborto","Amy Android","Robo Trumble"]
 
-playerName = window.prompt("What is your robot's name?");
+//playerName = window.prompt("What is your robot's name?");
 
 function startGame(){
     
@@ -167,22 +167,6 @@ function shop(){
 }
 
 //startGame();//game starts as the browser loads!!!
-var input = 1;
-
-var checkNum = function(num) {
-  var sum = num + 1;
-  
-  switch(sum) {
-    case 1:
-      console.log("one");
-    case 2:
-      console.log("two");
-    case 3:
-      console.log("three");
-      break
-    default:
-        console.log("gandu")
-  }
-};
-
-checkNum(0);
+for(let i=0;i<20;i++){
+  console.log(Math.floor(Math.random()*5 +6));
+}
