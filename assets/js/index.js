@@ -3,7 +3,7 @@ let enemyHealth;
 let enemyAttack = 12;
 let playerHealth;
 let playerAttack;
-console.log("this change was made in mac!!!");
+console.log("in random branch on mac");
 
 let fight = function(enemyName,playerName) {
 
