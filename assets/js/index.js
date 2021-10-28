@@ -1,7 +1,7 @@
 //creating player object
 var playerInfo = {
-  name : window.prompt("What's your Robot's name?"),
-  health: 100,
+  name : getPlayerName() ,
+  helth: 100,
   attack:10,
   money:10,
   reset: function(){
@@ -18,6 +18,12 @@ var playerInfo = {
     this.money -= 7;
   }
 }
+
+
+
+
+
+
 //creating objects of enemies in a list
 var enemyNames = [
   {
@@ -108,7 +114,7 @@ function startGame(){
         if (playerInfo.health > 0) {
             
             // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
-            window.alert("Welcome to Robot Gladiators! Round " + (i + 1));
+            window.alert("Welcome to Robot Gladiatorsss! Round " + (i + 1));
             // pick new enemy to fight based on the index of the enemy.names array
             var pickedEnemyObject = enemyNames[i];
             // reset enemy.health before starting new fight
@@ -201,6 +207,15 @@ function randomNumber(min,max) { //[min,max] i.e--->vales b/w [10,20]
 startGame();//game starts as the browser loads!!!
 
 
+function getPlayerName(){
+
+  var name ="";
+
+  while(!name){
+    name = window.prompt("your name")
+  }
+  return name;
+}
 
 
 
